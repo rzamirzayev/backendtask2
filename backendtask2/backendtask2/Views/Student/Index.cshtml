@@ -1,0 +1,17 @@
+﻿@using backendtask2.ViewModels
+@using backendtask2.Models
+
+
+<h1>Students List:</h1>
+<ul>
+    @foreach (Student item in Model.Students)
+    {
+        <li>@item.Id  Ad:@item.Name Bal:@item.ExamPoint</li>
+    }
+</ul>
+<ul>
+    @foreach (Group item in Model.Groups)
+    {
+        <li>@item.Id: @item.Number</li>
+    }
+</ul>
